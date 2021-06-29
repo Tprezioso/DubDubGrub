@@ -16,6 +16,7 @@
 		5595C006268B86ED00DD73F6 /* LocationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C005268B86ED00DD73F6 /* LocationMapView.swift */; };
 		5595C008268B86F800DD73F6 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C007268B86F800DD73F6 /* LocationListView.swift */; };
 		5595C00A268B870500DD73F6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C009268B870500DD73F6 /* ProfileView.swift */; };
+		5595C00C268BA16D00DD73F6 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C00B268BA16D00DD73F6 /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5595C005268B86ED00DD73F6 /* LocationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapView.swift; sourceTree = "<group>"; };
 		5595C007268B86F800DD73F6 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		5595C009268B870500DD73F6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5595C00B268BA16D00DD73F6 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				5595C003268B86CC00DD73F6 /* AppTabView.swift */,
 				5595C005268B86ED00DD73F6 /* LocationMapView.swift */,
 				5595C007268B86F800DD73F6 /* LocationListView.swift */,
+				5595C00B268BA16D00DD73F6 /* LocationDetailView.swift */,
 				5595C009268B870500DD73F6 /* ProfileView.swift */,
 				5595BFF2268B850200DD73F6 /* Assets.xcassets */,
 				5595BFF7268B850200DD73F6 /* Info.plist */,
@@ -167,6 +170,7 @@
 				5595C004268B86CC00DD73F6 /* AppTabView.swift in Sources */,
 				5595C008268B86F800DD73F6 /* LocationListView.swift in Sources */,
 				5595BFEF268B850100DD73F6 /* DubDubGrubApp.swift in Sources */,
+				5595C00C268BA16D00DD73F6 /* LocationDetailView.swift in Sources */,
 				5595C006268B86ED00DD73F6 /* LocationMapView.swift in Sources */,
 				5595C00A268B870500DD73F6 /* ProfileView.swift in Sources */,
 				5595C002268B865B00DD73F6 /* Color+Ext.swift in Sources */,
