@@ -15,3 +15,4 @@ struct ProfileNameText: ViewModifier {
             .minimumScaleFactor(0.75)
     }
 }
+
