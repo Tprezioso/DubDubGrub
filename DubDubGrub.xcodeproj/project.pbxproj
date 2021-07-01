@@ -22,6 +22,7 @@
 		5595C012268CF93D00DD73F6 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C011268CF93D00DD73F6 /* CustomModifiers.swift */; };
 		5595C014268CF98800DD73F6 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C013268CF98800DD73F6 /* View+Ext.swift */; };
 		5595C016268CFAB800DD73F6 /* DDGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C015268CFAB800DD73F6 /* DDGButton.swift */; };
+		5595C01E268E83B400DD73F6 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C01D268E83B400DD73F6 /* DDGLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		5595C011268CF93D00DD73F6 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		5595C013268CF98800DD73F6 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		5595C015268CFAB800DD73F6 /* DDGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGButton.swift; sourceTree = "<group>"; };
+		5595C01D268E83B400DD73F6 /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				5595BFFD268B855800DD73F6 /* DubDubGrub.entitlements */,
 				5595BFEE268B850100DD73F6 /* DubDubGrubApp.swift */,
+				5595C01C268E839200DD73F6 /* Model */,
 				5595C017268CFCD400DD73F6 /* Extensions */,
 				5595C018268CFD0D00DD73F6 /* Views */,
 				5595BFF2268B850200DD73F6 /* Assets.xcassets */,
@@ -151,6 +154,14 @@
 				5595C015268CFAB800DD73F6 /* DDGButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		5595C01C268E839200DD73F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5595C01D268E83B400DD73F6 /* DDGLocation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 				5595C008268B86F800DD73F6 /* LocationListView.swift in Sources */,
 				5595BFEF268B850100DD73F6 /* DubDubGrubApp.swift in Sources */,
 				5595C00C268BA16D00DD73F6 /* LocationDetailView.swift in Sources */,
+				5595C01E268E83B400DD73F6 /* DDGLocation.swift in Sources */,
 				5595C006268B86ED00DD73F6 /* LocationMapView.swift in Sources */,
 				5595C00A268B870500DD73F6 /* ProfileView.swift in Sources */,
 				5595C014268CF98800DD73F6 /* View+Ext.swift in Sources */,
