@@ -23,6 +23,15 @@ struct LocationMapView: View {
                 LogoView().shadow(radius: 10)
                 Spacer()
             }
+        }.onAppear {
+            CloudKitManager.getLocations { result in
+                switch result {
+                case .success(let locations):
+                    print(locations)
+                case .failure(let error):
+                    print(error)
+                }
+            }
         }
     }
 }
