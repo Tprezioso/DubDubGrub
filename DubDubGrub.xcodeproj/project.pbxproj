@@ -27,7 +27,7 @@
 		5595C0222690B2C200DD73F6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595C0212690B2C200DD73F6 /* MockData.swift */; };
 		55B9E00B26938BD300EB02C0 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00A26938BD300EB02C0 /* CloudKitManager.swift */; };
 		55B9E00D26938D4500EB02C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00C26938D4500EB02C0 /* Constants.swift */; };
-		55B9E00F2693922300EB02C0 /* CKRecors+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00E2693922300EB02C0 /* CKRecors+Ext.swift */; };
+		55B9E00F2693922300EB02C0 /* CKRecords+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +54,7 @@
 		5595C0212690B2C200DD73F6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		55B9E00A26938BD300EB02C0 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		55B9E00C26938D4500EB02C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		55B9E00E2693922300EB02C0 /* CKRecors+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecors+Ext.swift"; sourceTree = "<group>"; };
+		55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecords+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +122,7 @@
 			children = (
 				5595C001268B865B00DD73F6 /* Color+Ext.swift */,
 				5595C013268CF98800DD73F6 /* View+Ext.swift */,
-				55B9E00E2693922300EB02C0 /* CKRecors+Ext.swift */,
+				55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				5595C00A268B870500DD73F6 /* ProfileView.swift in Sources */,
 				55B9E00B26938BD300EB02C0 /* CloudKitManager.swift in Sources */,
 				5595C014268CF98800DD73F6 /* View+Ext.swift in Sources */,
-				55B9E00F2693922300EB02C0 /* CKRecors+Ext.swift in Sources */,
+				55B9E00F2693922300EB02C0 /* CKRecords+Ext.swift in Sources */,
 				5595C00E268CF5B900DD73F6 /* LocationCell.swift in Sources */,
 				5595C016268CFAB800DD73F6 /* DDGButton.swift in Sources */,
 				5595C010268CF5E200DD73F6 /* AvatarView.swift in Sources */,
