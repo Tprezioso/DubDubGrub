@@ -28,6 +28,7 @@
 		55B9E00B26938BD300EB02C0 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00A26938BD300EB02C0 /* CloudKitManager.swift */; };
 		55B9E00D26938D4500EB02C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00C26938D4500EB02C0 /* Constants.swift */; };
 		55B9E00F2693922300EB02C0 /* CKRecords+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */; };
+		55B9E011269676E500EB02C0 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E010269676E500EB02C0 /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		55B9E00A26938BD300EB02C0 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		55B9E00C26938D4500EB02C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecords+Ext.swift"; sourceTree = "<group>"; };
+		55B9E010269676E500EB02C0 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				5595C017268CFCD400DD73F6 /* Extensions */,
 				55B9E00A26938BD300EB02C0 /* CloudKitManager.swift */,
 				55B9E00C26938D4500EB02C0 /* Constants.swift */,
+				55B9E010269676E500EB02C0 /* AlertItem.swift */,
 			);
 			path = Utilties;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				5595C006268B86ED00DD73F6 /* LocationMapView.swift in Sources */,
 				5595C00A268B870500DD73F6 /* ProfileView.swift in Sources */,
 				55B9E00B26938BD300EB02C0 /* CloudKitManager.swift in Sources */,
+				55B9E011269676E500EB02C0 /* AlertItem.swift in Sources */,
 				5595C014268CF98800DD73F6 /* View+Ext.swift in Sources */,
 				55B9E00F2693922300EB02C0 /* CKRecords+Ext.swift in Sources */,
 				5595C00E268CF5B900DD73F6 /* LocationCell.swift in Sources */,
