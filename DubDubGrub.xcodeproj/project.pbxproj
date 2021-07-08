@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55034E862697B99F0086D1C5 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55034E852697B99F0086D1C5 /* LocationMapViewModel.swift */; };
 		5595BFEF268B850100DD73F6 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595BFEE268B850100DD73F6 /* DubDubGrubApp.swift */; };
 		5595BFF3268B850200DD73F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595BFF2268B850200DD73F6 /* Assets.xcassets */; };
 		5595BFF6268B850200DD73F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595BFF5268B850200DD73F6 /* Preview Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55034E852697B99F0086D1C5 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
 		5595BFEB268B850100DD73F6 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5595BFEE268B850100DD73F6 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		5595BFF2268B850200DD73F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +73,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55034E842697B97E0086D1C5 /* LocationMapView */ = {
+			isa = PBXGroup;
+			children = (
+				5595C005268B86ED00DD73F6 /* LocationMapView.swift */,
+				55034E852697B99F0086D1C5 /* LocationMapViewModel.swift */,
+			);
+			path = LocationMapView;
+			sourceTree = "<group>";
+		};
 		5595BFE2268B850100DD73F6 = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5595C003268B86CC00DD73F6 /* AppTabView.swift */,
-				5595C005268B86ED00DD73F6 /* LocationMapView.swift */,
+				55034E842697B97E0086D1C5 /* LocationMapView */,
 				5595C007268B86F800DD73F6 /* LocationListView.swift */,
 				5595C00B268BA16D00DD73F6 /* LocationDetailView.swift */,
 				5595C009268B870500DD73F6 /* ProfileView.swift */,
@@ -263,6 +274,7 @@
 				55B9E00D26938D4500EB02C0 /* Constants.swift in Sources */,
 				5595C012268CF93D00DD73F6 /* CustomModifiers.swift in Sources */,
 				5595C008268B86F800DD73F6 /* LocationListView.swift in Sources */,
+				55034E862697B99F0086D1C5 /* LocationMapViewModel.swift in Sources */,
 				5595BFEF268B850100DD73F6 /* DubDubGrubApp.swift in Sources */,
 				5595C0222690B2C200DD73F6 /* MockData.swift in Sources */,
 				5595C00C268BA16D00DD73F6 /* LocationDetailView.swift in Sources */,
