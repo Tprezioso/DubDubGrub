@@ -17,6 +17,7 @@ struct LocationMapView: View {
             Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems:locationManager.locations) { location in
                 MapMarker(coordinate: location.location.coordinate , tint: .brandPrimary)
             }
+            .accentColor(.grubRed)
             .ignoresSafeArea()
             VStack {
                 LogoView().shadow(radius: 10)
