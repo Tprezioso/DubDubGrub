@@ -14,7 +14,6 @@ final class LocationMapViewModel: NSObject, ObservableObject {
         span: MKCoordinateSpan(latitudeDelta: 0.01,
                                longitudeDelta: 0.01)
     )
-    
     @Published var alertItem: AlertItem?
     var deviceLocationManager: CLLocationManager?
 
@@ -56,7 +55,6 @@ final class LocationMapViewModel: NSObject, ObservableObject {
             }
         }
     }
-    
 }
 
 extension LocationMapViewModel: CLLocationManagerDelegate {

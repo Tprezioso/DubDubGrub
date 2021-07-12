@@ -20,10 +20,9 @@ struct LocationDetailView: View {
             BannerImageView(image: location.createBannerImage())
             HStack{
                 AddressView(address: location.address)
-                
                 Spacer()
             }.padding(.horizontal)
-            
+
             DescriptionView(text: location.description)
             
             ZStack{
