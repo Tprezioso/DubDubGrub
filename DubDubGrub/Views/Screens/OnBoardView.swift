@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct OnBoardView: View {
+    @Binding var isShowingOnboardView: Bool
+    
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
-                    
+                    isShowingOnboardView = false
                 } label: {
                     XDismissButton()
+                        .padding()
                 }
             }
             Spacer()
@@ -23,7 +26,7 @@ struct OnBoardView: View {
                 .padding(.bottom)
             VStack(alignment: .leading, spacing: 34) {
                 OnBoardInfoView(imageName: "building.2.crop.circle",
-                                title: "Resturant Locations",
+                                title: "Restaurant Locations",
                                 description: "Find places to dine around the convention center")
 
                 OnBoardInfoView(imageName: "checkmark.circle",
@@ -42,7 +45,7 @@ struct OnBoardView: View {
 
 struct OnBoardView_Previews: PreviewProvider {
     static var previews: some View {
-        OnBoardView()
+        OnBoardView(isShowingOnboardView: .constant(true))
     }
 }
 

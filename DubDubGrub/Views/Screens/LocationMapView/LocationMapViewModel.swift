@@ -14,9 +14,23 @@ final class LocationMapViewModel: NSObject, ObservableObject {
         span: MKCoordinateSpan(latitudeDelta: 0.01,
                                longitudeDelta: 0.01)
     )
+    @Published var isShowingOnboardView = false
     @Published var alertItem: AlertItem?
     var deviceLocationManager: CLLocationManager?
+    let kHasSeenOnboardView = "hasSeenOnboardView"
+    var hasSeenOnboardView: Bool {
+        return UserDefaults.standard.bool(forKey: kHasSeenOnboardView)
+    }
 
+    func runStartupChecks() {
+        if !hasSeenOnboardView {
+            isShowingOnboardView = true
+            UserDefaults.standard.setValue(true, forKey: kHasSeenOnboardView)
+        } else {
+            checkIfLocationServicesIsEnabled()
+        }
+    }
+    
     func checkIfLocationServicesIsEnabled() {
         if CLLocationManager.locationServicesEnabled() {
             deviceLocationManager = CLLocationManager()
