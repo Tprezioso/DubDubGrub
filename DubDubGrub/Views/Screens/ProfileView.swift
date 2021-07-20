@@ -42,9 +42,7 @@ struct ProfileView: View {
                 TextEditor(text: $bio)
                     .frame(height: 100)
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.secondary, lineWidth: 1.0))
-
             }.padding(.horizontal, 20)
-            
             Spacer()
 
             Button {
