@@ -12,6 +12,7 @@
 		553486D3269D131200C359A1 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553486D2269D131200C359A1 /* LogoView.swift */; };
 		553486D6269D299700C359A1 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553486D5269D299700C359A1 /* XDismissButton.swift */; };
 		556C7BE326A275FE009EF6A5 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C7BE226A275FE009EF6A5 /* PhotoPicker.swift */; };
+		556C7BE526A8E95A009EF6A5 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556C7BE426A8E95A009EF6A5 /* UIImage+Ext.swift */; };
 		5595BFEF268B850100DD73F6 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5595BFEE268B850100DD73F6 /* DubDubGrubApp.swift */; };
 		5595BFF3268B850200DD73F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595BFF2268B850200DD73F6 /* Assets.xcassets */; };
 		5595BFF6268B850200DD73F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5595BFF5268B850200DD73F6 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		553486D2269D131200C359A1 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		553486D5269D299700C359A1 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		556C7BE226A275FE009EF6A5 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		556C7BE426A8E95A009EF6A5 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		5595BFEB268B850100DD73F6 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5595BFEE268B850100DD73F6 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		5595BFF2268B850200DD73F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				5595C013268CF98800DD73F6 /* View+Ext.swift */,
 				55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */,
 				55987F6F269A02410073BD98 /* CKAsset+Ext.swift */,
+				556C7BE426A8E95A009EF6A5 /* UIImage+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				55987F6E2698BD910073BD98 /* LocationManager.swift in Sources */,
 				55987F70269A02410073BD98 /* CKAsset+Ext.swift in Sources */,
 				5595C016268CFAB800DD73F6 /* DDGButton.swift in Sources */,
+				556C7BE526A8E95A009EF6A5 /* UIImage+Ext.swift in Sources */,
 				5595C010268CF5E200DD73F6 /* AvatarView.swift in Sources */,
 				5595C002268B865B00DD73F6 /* Color+Ext.swift in Sources */,
 			);
