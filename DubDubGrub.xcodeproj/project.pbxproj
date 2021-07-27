@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55034E862697B99F0086D1C5 /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55034E852697B99F0086D1C5 /* LocationMapViewModel.swift */; };
+		551CFCB626B0C35B00A28E3F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CFCB526B0C35B00A28E3F /* ProfileViewModel.swift */; };
 		553486D1269D12C800C359A1 /* OnBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553486D0269D12C800C359A1 /* OnBoardView.swift */; };
 		553486D3269D131200C359A1 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553486D2269D131200C359A1 /* LogoView.swift */; };
 		553486D6269D299700C359A1 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553486D5269D299700C359A1 /* XDismissButton.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		55034E852697B99F0086D1C5 /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
+		551CFCB526B0C35B00A28E3F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		553486D0269D12C800C359A1 /* OnBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardView.swift; sourceTree = "<group>"; };
 		553486D2269D131200C359A1 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		553486D5269D299700C359A1 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
@@ -94,6 +96,15 @@
 				55034E852697B99F0086D1C5 /* LocationMapViewModel.swift */,
 			);
 			path = LocationMapView;
+			sourceTree = "<group>";
+		};
+		551CFCB426B0C32C00A28E3F /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				5595C009268B870500DD73F6 /* ProfileView.swift */,
+				551CFCB526B0C35B00A28E3F /* ProfileViewModel.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		553486D4269D297600C359A1 /* Buttons */ = {
@@ -191,7 +202,7 @@
 				55034E842697B97E0086D1C5 /* LocationMapView */,
 				5595C007268B86F800DD73F6 /* LocationListView.swift */,
 				5595C00B268BA16D00DD73F6 /* LocationDetailView.swift */,
-				5595C009268B870500DD73F6 /* ProfileView.swift */,
+				551CFCB426B0C32C00A28E3F /* ProfileView */,
 				553486D0269D12C800C359A1 /* OnBoardView.swift */,
 			);
 			path = Screens;
@@ -321,6 +332,7 @@
 				5595C008268B86F800DD73F6 /* LocationListView.swift in Sources */,
 				553486D1269D12C800C359A1 /* OnBoardView.swift in Sources */,
 				55034E862697B99F0086D1C5 /* LocationMapViewModel.swift in Sources */,
+				551CFCB626B0C35B00A28E3F /* ProfileViewModel.swift in Sources */,
 				5595BFEF268B850100DD73F6 /* DubDubGrubApp.swift in Sources */,
 				5595C0222690B2C200DD73F6 /* MockData.swift in Sources */,
 				5595C00C268BA16D00DD73F6 /* LocationDetailView.swift in Sources */,
