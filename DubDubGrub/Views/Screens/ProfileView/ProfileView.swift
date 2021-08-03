@@ -9,9 +9,8 @@ import SwiftUI
 import CloudKit
 
 struct ProfileView: View {
-    
     @StateObject var viewModel = ProfileViewModel()
-
+    
     var body: some View {
         VStack {
             ZStack {
@@ -41,7 +40,7 @@ struct ProfileView: View {
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.secondary, lineWidth: 1.0))
             }.padding(.horizontal, 20)
             Spacer()
-
+            
             Button {
                 viewModel.createProfile()
             } label: {
