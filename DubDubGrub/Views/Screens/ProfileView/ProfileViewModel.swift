@@ -16,6 +16,7 @@ final class ProfileViewModel: ObservableObject {
     @Published var bio = ""
     @Published var avatar = PlaceholderImage.avatar
     @Published var isShowingPhotoPicker = false
+    @Published var isLoading = false
     @Published var alertItem: AlertItem?
     
     func isValidProfile() -> Bool {
@@ -37,9 +38,10 @@ final class ProfileViewModel: ObservableObject {
             return
         }
         let profileRecordID = profileReference.recordID
-        
+        showLoadingView()
         CloudKitManager.shared.fetchRecord(with: profileRecordID) { result in
             DispatchQueue.main.async { [self] in
+                hideLoadingView()
                 switch result {
                 case .success(let record):
                     let profile = DDGProfile(record: record)
@@ -68,14 +70,19 @@ final class ProfileViewModel: ObservableObject {
             return
         }
         userRecord["userProfile"] = CKRecord.Reference(recordID: profileRecord.recordID, action: .none)
+        showLoadingView()
         CloudKitManager.shared.batchSave(records: [userRecord, profileRecord]) { result in
-            switch result {
-            case .success(_):
-                // Show alert
-                break
-            case .failure(_):
-                // Show alert
-                break
+            DispatchQueue.main.async { [self] in
+                hideLoadingView()
+                switch result {
+                case .success(_):
+                    // Show alert
+                    break
+                case .failure(_):
+                    // Show alert
+                    break
+                }
+
             }
         }
     }
@@ -92,4 +99,7 @@ final class ProfileViewModel: ObservableObject {
         
         return profileRecord
     }
+    
+    func showLoadingView() { isLoading = true }
+    func hideLoadingView() { isLoading = false }
 }

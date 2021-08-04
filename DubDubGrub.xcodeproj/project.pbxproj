@@ -38,6 +38,7 @@
 		55B9E00D26938D4500EB02C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00C26938D4500EB02C0 /* Constants.swift */; };
 		55B9E00F2693922300EB02C0 /* CKRecords+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */; };
 		55B9E011269676E500EB02C0 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B9E010269676E500EB02C0 /* AlertItem.swift */; };
+		55FB63F426BA17B500459E1D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FB63F326BA17B500459E1D /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		55B9E00C26938D4500EB02C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		55B9E00E2693922300EB02C0 /* CKRecords+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecords+Ext.swift"; sourceTree = "<group>"; };
 		55B9E010269676E500EB02C0 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		55FB63F326BA17B500459E1D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 				553486D4269D297600C359A1 /* Buttons */,
 				5595C00F268CF5E200DD73F6 /* AvatarView.swift */,
 				553486D2269D131200C359A1 /* LogoView.swift */,
+				55FB63F326BA17B500459E1D /* LoadingView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				55987F6E2698BD910073BD98 /* LocationManager.swift in Sources */,
 				55987F70269A02410073BD98 /* CKAsset+Ext.swift in Sources */,
 				5595C016268CFAB800DD73F6 /* DDGButton.swift in Sources */,
+				55FB63F426BA17B500459E1D /* LoadingView.swift in Sources */,
 				556C7BE526A8E95A009EF6A5 /* UIImage+Ext.swift in Sources */,
 				5595C010268CF5E200DD73F6 /* AvatarView.swift in Sources */,
 				5595C002268B865B00DD73F6 /* Color+Ext.swift in Sources */,

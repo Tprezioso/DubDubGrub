@@ -12,41 +12,44 @@ struct ProfileView: View {
     @StateObject var viewModel = ProfileViewModel()
     
     var body: some View {
-        VStack {
-            ZStack {
-                NameBackgroundView()
-                HStack(spacing: 16) {
-                    ZStack {
-                        AvatarView(size: 84, image: viewModel.avatar)
-                        EditImage()
+        ZStack {
+            VStack {
+                ZStack {
+                    NameBackgroundView()
+                    HStack(spacing: 16) {
+                        ZStack {
+                            AvatarView(size: 84, image: viewModel.avatar)
+                            EditImage()
+                        }
+                        .padding(.leading, 12)
+                        .onTapGesture { viewModel.isShowingPhotoPicker = true }
+                        VStack(spacing: 1) {
+                            TextField("First Name", text: $viewModel.firstName)
+                                .profileNameStyle()
+                            TextField("Last Name", text: $viewModel.lastName)
+                                .profileNameStyle()
+                            TextField("Company Name", text: $viewModel.companyName)
+                        }.padding(.trailing, 16)
                     }
-                    .padding(.leading, 12)
-                    .onTapGesture { viewModel.isShowingPhotoPicker = true }
-                    VStack(spacing: 1) {
-                        TextField("First Name", text: $viewModel.firstName)
-                            .profileNameStyle()
-                        TextField("Last Name", text: $viewModel.lastName)
-                            .profileNameStyle()
-                        TextField("Company Name", text: $viewModel.companyName)
-                    }.padding(.trailing, 16)
+                    .padding()
                 }
-                .padding()
+                
+                VStack(alignment: .leading, spacing: 8) {
+                    CharactersRemainView(currentCount: viewModel.bio.count)
+                    TextEditor(text: $viewModel.bio)
+                        .frame(height: 100)
+                        .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.secondary, lineWidth: 1.0))
+                }.padding(.horizontal, 20)
+                Spacer()
+                
+                Button {
+                    viewModel.createProfile()
+                } label: {
+                    DDGButton(title: "Create Profile")
+                }
+                .padding(.bottom)
             }
-            
-            VStack(alignment: .leading, spacing: 8) {
-                CharactersRemainView(currentCount: viewModel.bio.count)
-                TextEditor(text: $viewModel.bio)
-                    .frame(height: 100)
-                    .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.secondary, lineWidth: 1.0))
-            }.padding(.horizontal, 20)
-            Spacer()
-            
-            Button {
-                viewModel.createProfile()
-            } label: {
-                DDGButton(title: "Create Profile")
-            }
-            .padding(.bottom)
+            if viewModel.isLoading { LoadingView() }
         }.navigationTitle("Profile")
         .toolbar {
             Button {
