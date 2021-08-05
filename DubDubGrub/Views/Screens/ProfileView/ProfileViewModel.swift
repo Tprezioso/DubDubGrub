@@ -24,20 +24,20 @@ final class ProfileViewModel: ObservableObject {
               !lastName.isEmpty,
               !companyName.isEmpty,
               !bio.isEmpty,
-              avatar != PlaceholderImage.avatar,
+//              avatar != PlaceholderImage.avatar,
               bio.count <= 100 else { return false }
         return true
     }
     
     func getProfile() {
         guard let userRecord = CloudKitManager.shared.userRecord else {
-            // Show alert
+            alertItem = AlertContext.noUserRecord
             return
         }
-        guard let profileReference = userRecord["userProfile"] as? CKRecord.Reference else {
-            return
-        }
+        guard let profileReference = userRecord["userProfile"] as? CKRecord.Reference else { return }
+       
         let profileRecordID = profileReference.recordID
+        
         showLoadingView()
         CloudKitManager.shared.fetchRecord(with: profileRecordID) { result in
             DispatchQueue.main.async { [self] in
@@ -52,6 +52,7 @@ final class ProfileViewModel: ObservableObject {
                     bio = profile.bio
                 case .failure(_):
                     // Show Alert
+                    alertItem = AlertContext.unableToGetProfile
                     break
                 }
             }
@@ -66,7 +67,7 @@ final class ProfileViewModel: ObservableObject {
         
         let profileRecord = createProfileRecord()
         guard let userRecord = CloudKitManager.shared.userRecord else {
-            // Show alert
+            alertItem = AlertContext.noUserRecord
             return
         }
         userRecord["userProfile"] = CKRecord.Reference(recordID: profileRecord.recordID, action: .none)
@@ -77,9 +78,10 @@ final class ProfileViewModel: ObservableObject {
                 switch result {
                 case .success(_):
                     // Show alert
+                    alertItem = AlertContext.createProfileSuccess
                     break
                 case .failure(_):
-                    // Show alert
+                    alertItem = AlertContext.createProfileFailure
                     break
                 }
 
